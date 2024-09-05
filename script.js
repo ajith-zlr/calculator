@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>simple</head>
+
+<title>basic calculator</title>
+<body>
+billAmount:<input type="text" name="screen" id="bill"></br>
+tippercentage:<input type="text" name="screen1" id="per"></br>
+tipamount:<input type="text" name="screen2" id="tip"></br>
+totalbill:<input type="text" name="screen3" id="total" onmouseenter="getTotal()"></br>
+
+<!-- <button onchange="mount">calcualte</button> -->
+<script>
+
+
+    function getTotal(){
+        let billAmount=document.getElementById("bill").value;
+        let tippercentage=document.getElementById("per").value;
+        let tipamount=document.getElementById("tip").value;
+        let totalbill=document.getElementById("total").value;
+     document.getElementById('total').value=billAmount*tipamount;
+    }
+
+       function totalAdded(){
+        let billAmount=document.getElementById("bill").value;
+        let tippercentage=document.getElementById("per").value;
+        let tipamount=document.getElementById("tip").value;
+        let totalbill=document.getElementById("total").value;
+     document.getElementById('total').value=billAmount*tipamount;
+    }
+
+
+
+</script>
+
+</body>
+
+
+</html>
